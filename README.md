@@ -1,6 +1,6 @@
 # PercepMamba
 
-## 🛠️ Install Required Packages
+🛠️ Install Required Packages
 
 ```bash
 conda create -n mambayolo -y python=3.11
@@ -10,7 +10,7 @@ pip install seaborn thop timm einops
 cd selective_scan && pip install . && cd ..
 pip install -v -e .
 ```
-##📁 Prepare MSCOCO2017 Dataset
+📁 Prepare MSCOCO2017 Dataset
 ```bash
 coco/
 ├── annotations/
@@ -24,7 +24,7 @@ coco/
 │   └── val2017/
 ```
 
-##🚀 Train the Model
+🚀 Train the Model
 ```bash
 python PercepMamba_train.py --task train --data ultralytics/cfg/datasets/coco.yaml \
   --config ultralytics/cfg/models/PercepMamba/PercepMamba.yaml \
