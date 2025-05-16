@@ -7,7 +7,7 @@ pip install seaborn thop timm einops
 cd selective_scan && pip install . && cd ..
 pip install -v -e .
 
-Prepare MSCOCO2017 Dataset:
+# Prepare MSCOCO2017 Dataset:
 ├── coco
 │   ├── annotations
 │   │   ├── instances_train2017.json
@@ -19,7 +19,7 @@ Prepare MSCOCO2017 Dataset:
 │   │   ├── train2017
 │   │   ├── val2017
 
-Train:
+# Train:
 python PercepMamba_train.py --task train --data ultralytics/cfg/datasets/coco.yaml \
  --config ultralytics/cfg/models/PercepMamba/PercepMamba.yaml \
 --amp  --project ./output_dir/mscoco --name PercepMamba
