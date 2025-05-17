@@ -10,7 +10,7 @@ pip install seaborn thop timm einops
 cd selective_scan && pip install . && cd ..
 pip install -v -e .
 ```
-📁 Prepare MSCOCO2017 Dataset
+📁 Prepare COCO Dataset
 ```bash
 coco/
 ├── annotations/
